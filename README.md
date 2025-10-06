@@ -99,3 +99,80 @@ Here are a few suggestions on what to do next if you're new to Netlify visual ed
 ## Support
 
 If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+ForkplayWebsite/
+│
+├─ index.html        ← Main page
+├─ style.css         ← Styling
+├─ script.js         ← Animations & interactions
+├─ images/           ← Put your logos, hero image, menu pics here
+│     ├─ logo.png
+│     ├─ hero.jpg
+│     └─ menu1.jpg (optional)
+└─ fonts/            ← Optional custom fonts
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forkplay Soul Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAV -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Forkplay Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Forkplay Hero" class="hero-img">
+        <div class="hero-text">
+            <h1>Where Soul Food Meets Late-Night Luxury</h1>
+            <p>Delicious portions, unforgettable flavors.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About Forkplay</h2>
+        <p>Forkplay brings you soul food with a late-night twist. Fresh, flavorful, and always made with love.</p>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Example item -->
+            <div class="menu-item">
+                <h3>Fried Chicken Pan</h3>
+                <p>Price: $40</p>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Ribs Pan</h3>
+                <p>Price: $75</p>
+            </div>
+            <div class="menu-item">
+                <h3>Family Feast Pan</h3>
+                <p>Price: $130</p>
+            </div>
+            <!-- Add more items here -->
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: hello@forkplay.com</p>
+        <p>Instagram: @ForkplayATL</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
